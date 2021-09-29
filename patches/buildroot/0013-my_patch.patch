@@ -8,7 +8,9 @@ diff --git a/buildroot-2021.08/support/dependencies/dependencies.mk b/buildroot-
 index 4fac5c7..34a7bb5 100644
 --- a/buildroot-2021.08/support/dependencies/dependencies.mk
 +++ b/buildroot-2021.08/support/dependencies/dependencies.mk
-@@ -24,8 +24,7 @@ 
+@@ -24,8 +24,7 @@
+ -include $(sort $(filter-out %-tar.mk,$(wildcard support/dependencies/check-host-*.mk)))
+ 
  dependencies:
 -	@MAKE="$(MAKE)" DL_TOOLS="$(sort $(DL_TOOLS_DEPENDENCIES))" /
 -		$(TOPDIR)/support/dependencies/dependencies.sh
