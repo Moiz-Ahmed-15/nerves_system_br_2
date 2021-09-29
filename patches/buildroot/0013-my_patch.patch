@@ -1,0 +1,20 @@
+commit 0a50ca2b5b373b8d7bbf913574676ae3b0a9d44e
+Author: Moiz-Ahmed-15 <moizahmed15@gmail.com>
+Date:   Wed Sep 29 08:48:34 2021 +0500
+
+    aanother commit
+
+diff --git a/buildroot-2021.08/support/dependencies/dependencies.mk b/buildroot-2021.08/support/dependencies/dependencies.mk
+index 4fac5c7..34a7bb5 100644
+--- a/buildroot-2021.08/support/dependencies/dependencies.mk
++++ b/buildroot-2021.08/support/dependencies/dependencies.mk
+@@ -24,8 +24,7 @@ include support/dependencies/check-host-tar.mk
+ -include $(sort $(filter-out %-tar.mk,$(wildcard support/dependencies/check-host-*.mk)))
+ 
+ dependencies:
+-	@MAKE="$(MAKE)" DL_TOOLS="$(sort $(DL_TOOLS_DEPENDENCIES))" /
+-		$(TOPDIR)/support/dependencies/dependencies.sh
++	@MAKE="$(MAKE)" DL_TOOLS="$(sort $(DL_TOOLS_DEPENDENCIES))" $(TOPDIR)/support/dependencies/dependencies.sh
+ 
+ ################################################################################
+ #
